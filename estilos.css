@@ -1,0 +1,121 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  body {
+    font-family: 'Fredoka One', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Righteous', cursive;
+  font-size: 1.6rem;
+ 
+  }
+  
+  img {
+   max-width: 100%;
+  }
+.entrada {
+   
+    position: relative;
+   display: inline-block;
+    
+        
+  }
+  .contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+    
+  }
+  
+  .boton{
+    background-color: rgb(200, 108, 108);
+    width: 150px;
+    height: 45px;
+    position: absolute;
+    top: 170px;
+    left: 5%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    
+
+  }
+  .boton1{
+    background-color: rgb(200, 108, 108);
+    width: 200px;
+    height: 45px;
+    position: absolute;
+    top: 170px;
+    left: 20%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    
+
+  }
+  .lead{
+    position: absolute;
+    top: 120px;
+    left: 5%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+  }
+  .lead2{
+    position: absolute;
+    top: 10px;
+    left: 5%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 60px;
+
+  }
+  
+  .presentacion{
+    font-size: medium;
+    display: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+   
+  
+
+
+  @media (min-widht:1400px){
+    .contenedor{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-flow: row wrap;
+  }
+
+  .aside{
+    flex:1;
+  }
+  .main{
+    flex: 3;
+  }
+  .main img{
+    display: inline;
+  }
+}
+@media (min-widht: 768px){
+    .contenedor{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-flow: row wrap;
+  }
+
+  .aside{
+    flex:0 0 calc(50%- 1rem);
+  }
+  .main{
+    flex: 0 0 calc(50%- 1 rem);
+  }
+  .main img{
+    display: none;
+  }
+}
+footer{
+  background-color: gray;
+  color: aliceblue;
+}
